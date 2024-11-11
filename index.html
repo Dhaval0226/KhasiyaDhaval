@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Global Reset and Body Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #d0cecc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Header (Logo) */
+      .logo-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .logo-container img {
+        width: 400px;
+        height: auto;
+      }
+
+      /* Main Container */
+      .container {
+        background-color: #eeeeee;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        flex-grow: 1;
+        margin-top: 20px;
+      }
+      input[type="text"],
+      input[type="number"] {
+        padding: 12px;
+        margin: 10px 0;
+      }
+      input[type="text"]:hover {
+        background-color: rgb(233, 229, 229);
+      }
+
+      /* Form and Input Fields */
+      .container label {
+        text-align: left;
+        font-size: 16px;
+        display: block;
+        margin: 10px 0 5px;
+        color: #333;
+      }
+
+      .container input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: not-allowed;
+      }
+
+      /* Button and Links */
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .button-group a {
+        background-color: black;
+        color: white;
+        padding: 12px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button-group a:hover {
+        background-color: #333;
+      }
+
+      /* Footer (College Name) */
+      .college-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 20px;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (min-width: 768px) {
+        body {
+          padding: 40px;
+        }
+
+        .container {
+          max-width: 600px;
+        }
+
+        .college-name {
+          font-size: 32px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 700px;
+        }
+
+        .college-name {
+          font-size: 36px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header (Logo at the top) -->
+    <div class="logo-container">
+      <img src="gmiu.png" alt="College Logo" />
+    </div>
+
+    <!-- Main Content (Centered Form) -->
+    <div class="container">
+      <label for="subjectName">Subject Name:</label>
+      <input type="text" id="subjectName" value="Web Design" readonly />
+
+      <label for="subjectCode">Subject Code:</label>
+      <input type="text" id="subjectCode" value="BETCE13304" readonly />
+
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" value="KHASIYA DHAVAL MUKESHBHAI" readonly />
+
+      <label for="enNo">Enrollment Number:</label>
+      <input type="text" id="enNo" value="20230905090042" readonly />
+
+      <div class="button-group">
+        <a href="https://parthsolanki06.github.io/ALA1/">ALA-1</a>
+        <a href="https://parthsolanki06.github.io/ALA2/">ALA-2</a>
+        <a href="ala3.html">ALA-3</a>
+      </div>
+    </div>
+
+    <!-- Footer (College Name at the bottom) -->
+    <div class="college-name">Gyanmanjari Innovative University</div>
+  </body>
+</html>
